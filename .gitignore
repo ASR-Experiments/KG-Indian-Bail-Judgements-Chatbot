@@ -1,0 +1,5 @@
+software/neo4j/data/
+software/neo4j/conf/
+software/neo4j/logs/
+software/neo4j/plugins/
+software/neo4j/secrets/

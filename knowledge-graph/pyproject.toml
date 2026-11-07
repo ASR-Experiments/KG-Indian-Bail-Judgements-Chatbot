@@ -8,5 +8,17 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
-    "jupyter>=1.1.1",
+    "neo4j>=6.4.1",
+    "numpy>=2.5.4",
+    "pandas>=3.1.1",
+    "python-dotenv>=1.2.4",
 ]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "jupyterlab>=4.6.6",
+]
+
+[tool.uv.tasks]
+setup-env = "cp -n .env.example .env"

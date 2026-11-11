@@ -1,0 +1,23 @@
+[project]
+name = "ollama-intro"
+version = "0.1.0"
+description = "Intro to Ollama via LangChain"
+readme = "README.md"
+authors = [
+    { name = "Arvind Singh Rawat", email = "arvind160102261@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.9",
+    "langchain-ollama>=1.1.0",
+    "python-dotenv>=1.2.4",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "jupyterlab>=4.6.6",
+]
+
+[tool.uv.tasks]
+setup-env = "cp -n .env.example .env"
